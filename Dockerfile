@@ -8,4 +8,4 @@ RUN apk -U --no-cache add openssl ca-certificates && \
   find . -name oauth2_proxy -exec mv {} /bin/ \; && \
   rm -rf /tmp/*
 
-ENTRYPOINT ["oauth2_proxy"]
+CMD ["oauth2_proxy"]
